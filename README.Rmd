@@ -20,30 +20,39 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/mcguinlu/nightvale/workflows/R-CMD-check/badge.svg)](https://github.com/mcguinlu/nightvale/actions)
 <!-- badges: end -->
 
-The goal of nightvale is to ...
+## Background
+
+[Welcome to Night Vale](http://www.welcometonightvale.com/) is a twice-monthly podcast in the style of community updates for the small desert town of Night Vale, with heavy themes of surreal humor and horror. A key and recurring part of the show is "Today's Proverb". This package provides the metadata and proverb for each episode as a dataset, in addition to a function to return a nicely formatted proverb to the console.  
 
 ## Installation
 
-You can install the released version of nightvale from [CRAN](https://CRAN.R-project.org) with:
+This package is a GitHub only package, and can be installed using:
 
-``` r
-install.packages("nightvale")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
+``` {r, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("mcguinlu/nightvale")
 ```
-## Example
 
-This is a basic example which shows you how to solve a common problem:
+## Usage
 
-```{r example, eval=FALSE}
+### Access the data
+
+```{r eval=TRUE}
 library(nightvale)
-## basic example code
+
+head(proverb_data)
 ```
 
 
+### Get a random proverb
+
+```{r eval=TRUE}
+proverb()
+```
+
+### Get a specific proverb
+
+```{r eval=TRUE}
+proverb(22)
+```
 

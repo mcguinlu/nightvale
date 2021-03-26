@@ -1,12 +1,17 @@
 Package: nightvale
 Type: Package
-Title: Random Welcome To Night Vale Proverbs
-Version: 0.1.0
+Title: Access Welcome To Night Vale Proverbs
+Version: 0.0.1
 Authors@R: c( 
     person("Luke", "McGuinness",
            role = c("aut", "cre"),
            email = "luke.mcguinness@bristol.ac.uk"))
-Description: Print a Welcome to Night Vale proverb to the consolde
+Description: Welcome to Night Vale is a podcast is a twice-monthly podcast in
+    the style of community updates for the small desert town of Night Vale, with
+    heavy themes of surreal humor and horror. A key and reccuring part of the 
+    show is "Today's Proverb". This package provides the metadata and proverb 
+    for each episode as a dataset, in addition to a function to return a nicely 
+    formatted proverb to the console.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -18,7 +23,9 @@ Imports:
     dplyr,
     xml2,
     stringr,
-    magrittr
+    magrittr,
+    methods,
+    rlang
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
