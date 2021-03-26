@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Print a Welcome to Night Vale proverb to the console — proverb • nightvale</title>
+<title>Print a Welcome to Night Vale (WTNV) proverb to the console — proverb • nightvale</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,8 @@
 
 
 
-<meta property="og:title" content="Print a Welcome to Night Vale proverb to the console — proverb" />
-<meta property="og:description" content="Print a Welcome to Night Vale proverb to the console
-Title" />
+<meta property="og:title" content="Print a Welcome to Night Vale (WTNV) proverb to the console — proverb" />
+<meta property="og:description" content="prin" />
 
 
 
@@ -73,7 +72,7 @@ Title" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nightvale</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
       </span>
     </div>
 
@@ -109,35 +108,40 @@ Title" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Print a Welcome to Night Vale proverb to the console</h1>
-    <small class="dont-index">Source: <a href='https://github.com/mcguinlu/nightvale/blob/master/R/hello.R'><code>R/hello.R</code></a>, <a href='https://github.com/mcguinlu/nightvale/blob/master/R/proverbs.R'><code>R/proverbs.R</code></a></small>
+    <h1>Print a Welcome to Night Vale (WTNV) proverb to the console</h1>
+    <small class="dont-index">Source: <a href='https://github.com/mcguinlu/nightvale/blob/master/R/nv_proverb.R'><code>R/nv_proverb.R</code></a></small>
     <div class="hidden name"><code>proverb.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Print a Welcome to Night Vale proverb to the console</p>
-<p>Title</p>
+    <p>prin</p>
     </div>
 
-    <pre class="usage"><span class='fu'>proverb</span><span class='op'>(</span><span class='va'>id</span><span class='op'>)</span>
-
-<span class='fu'>proverb</span><span class='op'>(</span><span class='va'>id</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>proverb</span><span class='op'>(</span><span class='va'>id</span>, show_meta <span class='op'>=</span> <span class='cn'>TRUE</span>, show_id <span class='op'>=</span> <span class='cn'>FALSE</span>, as_string <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>id</th>
-      <td></td>
+      <td><p>If no ID is specified, then a random WTNV proverb is returned.</p></td>
+    </tr>
+    <tr>
+      <th>show_meta</th>
+      <td><p>Whether to display the metadata (episode title and airdate)
+for the proverb. Default is TRUE.</p></td>
+    </tr>
+    <tr>
+      <th>show_id</th>
+      <td><p>Whether to display the ID of the proverb. Default is FALSE.</p></td>
+    </tr>
+    <tr>
+      <th>as_string</th>
+      <td><p>If FALSE (default), print proverb to the console. If TRUE,
+return proverb as string (useful if, for example, you want to pass the
+proverb to the cowsay package).</p></td>
     </tr>
     </table>
-
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    
-
-
-
 
 
   </div>
