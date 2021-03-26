@@ -1,14 +1,8 @@
-#' Extract
-#'
-#' @return
-#'
-#' @keywords internal
-#'
-#' @examples
-#'
 get_proverb_dataset <- function(){
 
-  t <- xml2::read_html("https://nightvale.fandom.com/wiki/List_of_Proverbs")
+  test <- xml2::read_html("https://nightvale.fandom.com/wiki/List_of_Proverbs")
+
+  t <- test %>%
     rvest::html_nodes("tr") %>%
     rvest::html_text()
 
@@ -27,10 +21,9 @@ get_proverb_dataset <- function(){
            number = stringr::str_replace_all(number,'\"',""),
            airdate = stringr::str_replace_all(airdate,'\"',"")) %>%
     # Remove trailing newline character from airdate/
-    dplyr::mutate(airdate = stringr::str_replace(airdate,"\n",""),
-                  title = stringr::str_replace(title,"\nTelly version"," (Telly Version)"))
+    dplyr::mutate(airdate = stringr::str_replace(airdate,"\n",""))
 
-  proverb_data <- t[-1] %>%
+  proverb <- t[-1] %>%
     data.frame(proverb = ., stringsAsFactors = FALSE) %>%
     # Extract every even row
     dplyr::slice(which(dplyr::row_number() %% 2 == 0)) %>%
@@ -50,17 +43,15 @@ get_proverb_dataset <- function(){
     dplyr::select(id, dplyr::everything()) %>%
     tidyr::tibble()
 
-  return(proverb_data)
-
 }
 
-#' Print a Welcome to Night Vale proverb to the console
+#' Title
 #'
-#' @param id If no id is specified, then a random WTNV proverb is returned
+#' @param id
 #'
 #' @return
 #' @export
-proverb <- function(id, show_meta = TRUE, show_id = FALSE) {
+proverb <- function(id) {
 
   n_row <- seq_along(1:nrow(proverb_data))
 
@@ -68,12 +59,10 @@ proverb <- function(id, show_meta = TRUE, show_id = FALSE) {
     id <- sample(n_row,1)
   }
 
-  proverb <- paste0(proverb_data$proverb[id],
+  cat(paste0(proverb_data$proverb[id],
         "\n    -- \"",
         proverb_data$title[id],
         "\", ",
-        proverb_data$airdate[id])
-
-  return(proverb)
+        proverb_data$airdate[id]))
 
 }

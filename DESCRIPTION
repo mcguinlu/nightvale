@@ -1,12 +1,13 @@
 Package: nightvale
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Random Welcome To Night Vale Proverbs
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: c( 
+    person("Luke", "McGuinness",
+           role = c("aut", "cre"),
+           email = "luke.mcguinness@bristol.ac.uk"))
+Description: Print a Welcome to Night Vale proverb to the consolde
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/mcguinlu/nightvale
@@ -21,3 +22,5 @@ Imports:
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
+Suggests: 
+    testthat
