@@ -8,6 +8,7 @@ name: pkgdown
 
 jobs:
   pkgdown:
+    needs: scrape
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}

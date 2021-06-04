@@ -12,6 +12,7 @@ name: test-coverage
 
 jobs:
   test-coverage:
+    needs: scrape
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
