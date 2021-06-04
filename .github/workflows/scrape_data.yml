@@ -23,8 +23,8 @@ jobs:
     - name: Update README
       run: |-
         Rscript -e "install.packages('remotes')"
-        Rscript -e "remotes::install_local(".")"
-        Rscript -e "remotes::install_cran(c("usethis"))"
+        Rscript -e "remotes::install_local('.')"
+        Rscript -e "remotes::install_cran('usethis')"
         Rscript -e "source(\"R/scrape_data.R\")"
     - name: Commit and push if changed
       run: |-
