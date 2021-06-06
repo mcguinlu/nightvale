@@ -119,8 +119,8 @@
 <a href="#get-a-random-proverb" class="anchor"></a>Get a random proverb</h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="reference/proverb.html">proverb</a></span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt; "It's always darkest before the dawn," we are always reassured by people who are totally wrong about how the sun works.</span>
-<span class="co">#&gt;     -- "Toast", 15 December 2016</span></code></pre></div>
+<span class="co">#&gt; We are living in an immaterial world, a ghost world, and I am an immaterial girl - a ghost.</span>
+<span class="co">#&gt;     -- "The Lights in Radon Canyon", 1 October 2012</span></code></pre></div>
 </div>
 <div id="get-a-specific-proverb" class="section level3">
 <h3 class="hasAnchor">
@@ -130,6 +130,14 @@
 <span class="co">#&gt; Ask your doctor if right is left for you.</span>
 <span class="co">#&gt;     -- "A Memory of Europe", 15 April 2013</span></code></pre></div>
 </div>
+</div>
+<div id="git-scraping" class="section level2">
+<h2 class="hasAnchor">
+<a href="#git-scraping" class="anchor"></a>Git Scraping</h2>
+<p>The Welcome to Night Vale podcast continues to release a new show every two weeks. In order to capture the proverbs from these new episodes, this project also contains a GitHub Action that automatically re-scrapes the <a href="https://nightvale.fandom.com/wiki/List_of_Proverbs">community-maintained table of proverbs</a> every week. When new proverbs are identified, the proverb dataset included as part of this package is updated.</p>
+<p>To get the most up-to-date version of the proverb dataset, simply re-install the package using:</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mcguinlu/nightvale"</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
   </div>
@@ -162,7 +170,7 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://github.com/mcguinlu/nightvale/actions"><img src="https://github.com/mcguinlu/nightvale/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://github.com/mcguinlu/nightvale/actions"><img src="https://github.com/mcguinlu/nightvale/actions/workflows/scrape_data.yml/badge.svg" alt="GitHub Actions"></a></li>
 </ul>
 </div>
 </div>
