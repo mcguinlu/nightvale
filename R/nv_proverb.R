@@ -52,8 +52,6 @@ get_proverb_dataset <- function(){
 
 #' Print a Welcome to Night Vale (WTNV) proverb to the console
 #'
-#' @description prin
-#'
 #' @param id If no ID is specified, then a random WTNV proverb is returned.
 #' @param show_meta Whether to display the metadata (episode title and airdate)
 #'   for the proverb. Default is TRUE.
