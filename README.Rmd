@@ -17,9 +17,9 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/mcguinlu/nightvale/workflows/R-CMD-check/badge.svg)](https://github.com/mcguinlu/nightvale/actions)
+[![GitHub Actions](https://github.com/mcguinlu/nightvale/actions/workflows/scrape_data.yml/badge.svg)](https://github.com/mcguinlu/nightvale/actions)
 <!-- badges: end -->
-
+  
 ## Background
 
 [Welcome to Night Vale](http://www.welcometonightvale.com/) is a twice-monthly podcast in the style of community updates for the small desert town of Night Vale, with heavy themes of surreal humor and horror. A key and recurring part of the show is "Today's Proverb". This package provides the metadata and proverb for each episode as a dataset, in addition to a function to return a nicely formatted proverb to the console.  
@@ -56,3 +56,12 @@ proverb()
 proverb(22)
 ```
 
+## Git Scraping
+
+The Welcome to Night Vale podcast continues to release a new show every two weeks. In order to capture the proverbs from these new episodes, this project also contains a GitHub Action that automatically re-scrapes the [community-maintained table of proverbs](https://nightvale.fandom.com/wiki/List_of_Proverbs) every week. When new proverbs are identified, the proverb dataset included as part of this package is updated.
+
+To get the most up-to-date version of the proverb dataset, simply re-install the package using:
+
+``` {r, eval = FALSE}
+devtools::install_github("mcguinlu/nightvale")
+```

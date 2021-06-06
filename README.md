@@ -7,7 +7,8 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/mcguinlu/nightvale/workflows/R-CMD-check/badge.svg)](https://github.com/mcguinlu/nightvale/actions)
+[![GitHub
+Actions](https://github.com/mcguinlu/nightvale/actions/workflows/scrape_data.yml/badge.svg)](https://github.com/mcguinlu/nightvale/actions)
 <!-- badges: end -->
 
 ## Background
@@ -57,8 +58,8 @@ head(proverb_data)
 
 ``` r
 proverb()
-#> "It's always darkest before the dawn," we are always reassured by people who are totally wrong about how the sun works.
-#>     -- "Toast", 15 December 2016
+#> We are living in an immaterial world, a ghost world, and I am an immaterial girl - a ghost.
+#>     -- "The Lights in Radon Canyon", 1 October 2012
 ```
 
 ### Get a specific proverb
@@ -67,4 +68,21 @@ proverb()
 proverb(22)
 #> Ask your doctor if right is left for you.
 #>     -- "A Memory of Europe", 15 April 2013
+```
+
+## Git Scraping
+
+The Welcome to Night Vale podcast continues to release a new show every
+two weeks. In order to capture the proverbs from these new episodes,
+this project also contains a GitHub Action that automatically re-scrapes
+the [community-maintained table of
+proverbs](https://nightvale.fandom.com/wiki/List_of_Proverbs) every
+week. When new proverbs are identified, the proverb dataset included as
+part of this package is updated.
+
+To get the most up-to-date version of the proverb dataset, simply
+re-install the package using:
+
+``` r
+devtools::install_github("mcguinlu/nightvale")
 ```
