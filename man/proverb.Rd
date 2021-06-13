@@ -19,5 +19,5 @@ return proverb as string (useful if, for example, you want to pass the
 proverb to the cowsay package).}
 }
 \description{
-prin
+Print a Welcome to Night Vale (WTNV) proverb to the console
 }
