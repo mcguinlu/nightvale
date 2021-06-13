@@ -6,4 +6,4 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
-R/scrape_data.R
+^R_gha$
