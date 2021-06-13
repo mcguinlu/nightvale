@@ -1,6 +1,6 @@
 Package: nightvale
 Type: Package
-Title: Access Welcome To Night Vale Proverbs
+Title: Access Welcome to Night Vale Proverbs
 Version: 0.0.1
 Authors@R: c( 
     person("Luke", "McGuinness",
@@ -8,7 +8,7 @@ Authors@R: c(
            email = "luke.mcguinness@bristol.ac.uk"))
 Description: Welcome to Night Vale is a podcast is a twice-monthly podcast in
     the style of community updates for the small desert town of Night Vale, with
-    heavy themes of surreal humor and horror. A key and reccuring part of the 
+    heavy themes of surreal humor and horror. A key and recurring part of the 
     show is "Today's Proverb". This package provides the metadata and proverb 
     for each episode as a dataset, in addition to a function to return a nicely 
     formatted proverb to the console.
