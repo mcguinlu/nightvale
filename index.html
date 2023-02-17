@@ -81,8 +81,8 @@
 </h2>
 <p>This package is a GitHub only package, and can be installed using:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mcguinlu/nightvale"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mcguinlu/nightvale"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
@@ -91,39 +91,39 @@
 <h3 id="access-the-data">Access the data<a class="anchor" aria-label="anchor" href="#access-the-data"></a>
 </h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/mcguinlu/nightvale" class="external-link">nightvale</a></span><span class="op">)</span>
-
-<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">proverb_data</span><span class="op">)</span>
-<span class="co">#&gt;   id number                   title          airdate</span>
-<span class="co">#&gt; 1  1      1                   Pilot     15 June 2012</span>
-<span class="co">#&gt; 2  2      2              Glow Cloud      1 July 2012</span>
-<span class="co">#&gt; 3  3      3      Station Management     15 July 2012</span>
-<span class="co">#&gt; 4  4      4             PTA Meeting    1 August 2012</span>
-<span class="co">#&gt; 5  5      5 The Shape in Grove Park   15 August 2012</span>
-<span class="co">#&gt; 6  6      6          The Drawbridge 1 September 2012</span>
-<span class="co">#&gt;                                                                                                                                        proverb</span>
-<span class="co">#&gt; 1                                                                      Look to the north. Keep looking. There's nothing coming from the south.</span>
-<span class="co">#&gt; 2                                                      Men are from Mars; women are from Venus; Earth is a hallucination; podcasts are dreams.</span>
-<span class="co">#&gt; 3                                                                            There's a special place in Hell. It's really hip. Very exclusive.</span>
-<span class="co">#&gt; 4 What has four legs in the morning, two legs at noon, and three legs in the evening? I don’t know, but I trapped it in my bedroom. Send help.</span>
-<span class="co">#&gt; 5                                                                              A million dollars isn’t cool. You know what’s cool? A basilisk.</span>
-<span class="co">#&gt; 6                                                                      Lost? Confused? Lacking direction? Need to find a purpose in your life?</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/mcguinlu/nightvale" class="external-link">nightvale</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">proverb_data</span><span class="op">)</span></span>
+<span><span class="co">#&gt;   id number                   title          airdate</span></span>
+<span><span class="co">#&gt; 1  1      1                   Pilot     15 June 2012</span></span>
+<span><span class="co">#&gt; 2  2      2              Glow Cloud      1 July 2012</span></span>
+<span><span class="co">#&gt; 3  3      3      Station Management     15 July 2012</span></span>
+<span><span class="co">#&gt; 4  4      4             PTA Meeting    1 August 2012</span></span>
+<span><span class="co">#&gt; 5  5      5 The Shape in Grove Park   15 August 2012</span></span>
+<span><span class="co">#&gt; 6  6      6          The Drawbridge 1 September 2012</span></span>
+<span><span class="co">#&gt;                                                                                                                                        proverb</span></span>
+<span><span class="co">#&gt; 1                                                                      Look to the north. Keep looking. There's nothing coming from the south.</span></span>
+<span><span class="co">#&gt; 2                                                      Men are from Mars; women are from Venus; Earth is a hallucination; podcasts are dreams.</span></span>
+<span><span class="co">#&gt; 3                                                                            There's a special place in Hell. It's really hip. Very exclusive.</span></span>
+<span><span class="co">#&gt; 4 What has four legs in the morning, two legs at noon, and three legs in the evening? I don’t know, but I trapped it in my bedroom. Send help.</span></span>
+<span><span class="co">#&gt; 5                                                                              A million dollars isn’t cool. You know what’s cool? A basilisk.</span></span>
+<span><span class="co">#&gt; 6                                                                      Lost? Confused? Lacking direction? Need to find a purpose in your life?</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="get-a-random-proverb">Get a random proverb<a class="anchor" aria-label="anchor" href="#get-a-random-proverb"></a>
 </h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="reference/proverb.html">proverb</a></span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt; We are living in an immaterial world, a ghost world, and I am an immaterial girl - a ghost.</span>
-<span class="co">#&gt;     -- "The Lights in Radon Canyon", 1 October 2012</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/proverb.html">proverb</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; We are living in an immaterial world, a ghost world, and I am an immaterial girl - a ghost.</span></span>
+<span><span class="co">#&gt;     -- "The Lights in Radon Canyon", 1 October 2012</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="get-a-specific-proverb">Get a specific proverb<a class="anchor" aria-label="anchor" href="#get-a-specific-proverb"></a>
 </h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="reference/proverb.html">proverb</a></span><span class="op">(</span><span class="fl">22</span><span class="op">)</span>
-<span class="co">#&gt; Ask your doctor if right is left for you.</span>
-<span class="co">#&gt;     -- "A Memory of Europe", 15 April 2013</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/proverb.html">proverb</a></span><span class="op">(</span><span class="fl">22</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Ask your doctor if right is left for you.</span></span>
+<span><span class="co">#&gt;     -- "A Memory of Europe", 15 April 2013</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
@@ -132,7 +132,7 @@
 <p>The Welcome to Night Vale podcast continues to release a new show every two weeks. In order to capture the proverbs from these new episodes, this project also contains a GitHub Action that automatically re-scrapes the <a href="https://nightvale.fandom.com/wiki/List_of_Proverbs" class="external-link">community-maintained table of proverbs</a> every week. When new proverbs are identified, the proverb dataset included as part of this package is updated.</p>
 <p>To get the most up-to-date version of the proverb dataset, simply re-install the package using:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mcguinlu/nightvale"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mcguinlu/nightvale"</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
   </div>
